@@ -1,0 +1,184 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* common things */
+.container{
+    width: 100%;
+}
+
+.button{
+    text-decoration: none;
+    color: white;
+   
+    background-color: black;
+    padding: 10px;
+}
+.button:hover{
+    background-color: rgba(54, 50, 50, 0.842);
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    margin-bottom: 0;
+}
+/* Header */
+header{
+    position: relative;
+}
+.header-image{
+    width: 100%;
+}
+.header-image>img{
+    width: 100%;
+}
+.btn{
+    position: absolute;
+    bottom: 70px;
+    left: 100px;
+}
+
+/* Shop-now */
+.shop-now{
+    background-image: linear-gradient(#FF8008,#FFC837);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding:100px 0px;
+}
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.shop-now-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.shop-now-heading h1,h4{
+    color: white;
+}
+.shop-now-heading h1{
+    font-size:50px;
+    margin-bottom: 0;
+}
+.shop-now-heading h4{
+    font-size: 20px;
+}
+.shop-now img{
+    width: 50%;
+}
+.shop-now-image{
+        display: flex;
+        justify-content: center;
+}
+/* performance */
+.top-performance{
+    display: flex;
+    justify-content: center;
+}
+.performances{
+    width: 95%;
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+}
+.performance{
+    margin-bottom: 10px;
+}
+.performance-img img{
+    width: 100%;
+    height: 642px;
+}
+
+.performance-info h1{
+    margin-bottom: 0;
+}
+/* video */
+.video{
+    margin-top: 50px;
+}
+
+/* Player */
+.top-players{
+     display: flex;
+     justify-content: center;
+     margin-bottom: 50px;
+}
+.players{
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.player{
+    margin-bottom: 10px;
+}
+.player .player-image img{
+    width: 100%;
+    height: 268px;
+}
+
+/*shoes*/
+.top-shoes{
+    display: flex;
+    justify-content: center;
+}
+.shoes{
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-column-gap:10px ;
+}
+.shoe-image img{
+    width: 100%;
+    height: 387px;
+}
+.shoe-detail{
+    display: flex;
+    justify-content: space-around;
+}
+.shoes-name{
+    font-size: 14px;
+}
+.price{
+    font-size:14px
+}
+
+/* Media Queries */
+/* Mobile Device */
+@media only screen and (max-width:688px){
+    .container{
+        width: 100%;
+    }
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
+    .btn{
+        margin: 30px 0;
+        position: static;
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: space-evenly;
+        
+    }
+    .shop-now,.performances,.players{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .shop-now-heading{
+        width: 50%;
+    }
+    .shop-now img{
+        padding-top: 30px;
+        width: 80%;
+    }
+    .shoes{
+        grid-template-columns: repeat(1,1fr);
+    }
+ 
+}
